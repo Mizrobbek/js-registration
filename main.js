@@ -23,7 +23,7 @@ $elForm.addEventListener("submit", function (evt) {
   let Pass = Password.value.trim();
   let ConfPassword = ConfPass.value.trim();
 
-  if (Password != ConfPassword) {
+  if (Password !== ConfPassword) {
     alert("Sizning kodingiz tasdiqlanmadi!");
     Password.value = null;
     ConfPass.value = null;
