@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Registration</h1>
+      <form id="Form">
+        <div>
+          <input
+            type="text"
+            class="input1"
+            id="UserName"
+            placeholder="First Name"
+          />
+          <input
+            type="text"
+            class="input1"
+            id="LastName"
+            placeholder="Last Name"
+          />
+        </div>
+        <input type="email" class="input2" id="mail" placeholder="Email" />
+        <input
+          type="tel"
+          class="input2"
+          id="phone"
+          placeholder="Phone Nomber"
+        />
+        <div>
+          <input
+            type="text"
+            class="input1"
+            id="country"
+            placeholder="Country"
+          />
+          <input type="text" class="input1" id="City" placeholder="City" />
+        </div>
+        <div class="gender">
+          <label>Gender:</label>
+          <ul>
+            <li>
+              <input type="radio" name="name" id="one" checked />
+              <label for="one">Male</label>
+
+              <div class="check"></div>
+            </li>
+
+            <li>
+              <input type="radio" name="name" id="two" />
+              <label for="two">Femail</label>
+
+              <div class="check"></div>
+            </li>
+          </ul>
+        </div>
+        <input
+          type="password"
+          class="input2"
+          id="Password"
+          placeholder="Password"
+        />
+        <input
+          type="password"
+          class="input2"
+          id="ConfPass"
+          placeholder="Confirm Password"
+        />
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <ul id="box"></ul>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
