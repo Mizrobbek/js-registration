@@ -1,4 +1,6 @@
 "use strict";
+let $elBody = document.body;
+let $eldarkMode = document.querySelector(".btn_mode");
 let $elForm = document.getElementById("Form");
 let $elBox = document.getElementById("box");
 
@@ -10,6 +12,12 @@ let $elcountry = document.getElementById("country");
 let $elCity = document.getElementById("City");
 let $elPassword = document.getElementById("Password");
 let $elConfPass = document.getElementById("ConfPass");
+
+$eldarkMode.addEventListener("click", function (e) {
+  e.preventDefault();
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+});
 
 $elForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
